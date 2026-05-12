@@ -1,0 +1,244 @@
+[gd_scene format=3 uid="uid://dgvn2fget6dxg"]
+
+[ext_resource type="Texture2D" uid="uid://b1d1grpt8y11h" path="res://assets/characters/craftpix-net-803217-free-knight-character-sprites-pixel-art/Knight_1/Idle.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://diuj6hp1sydpd" path="res://assets/backgrounds/ChatGPT Image 2026. márc. 26. 18_58_08.png" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://ci8x5by5iqubu" path="res://main.gd" id="1_7mycd"]
+[ext_resource type="Texture2D" uid="uid://cyvj7ue2iiyr7" path="res://assets/characters/princess/Kitsune/Idle.png" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://dvut3cvdc42t6" path="res://bridge.gd" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cppc4t4ht2fcf" path="res://assets/bridge/BridgeTiles.png" id="5_lquwl"]
+
+[sub_resource type="FontVariation" id="FontVariation_7mycd"]
+
+[node name="Main" type="Node2D" unique_id=2043102872]
+script = ExtResource("1_7mycd")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2040436728]
+position = Vector2(642, 360.50003)
+scale = Vector2(0.8340649, 0.7001954)
+texture = ExtResource("1_1bvp3")
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=475791754]
+position = Vector2(640.2191, 360.50003)
+scale = Vector2(0.83174604, 0.7001954)
+texture = ExtResource("1_1bvp3")
+
+[node name="Hero" type="Sprite2D" parent="." unique_id=22676920]
+position = Vector2(137.00002, 293.00003)
+scale = Vector2(2.8714287, 2.8714287)
+texture = ExtResource("1_0xm2m")
+region_enabled = true
+region_rect = Rect2(0, 0, 70, 128)
+
+[node name="Princess" type="Sprite2D" parent="." unique_id=227479902]
+position = Vector2(1206, 353)
+scale = Vector2(2.436765, 2.4367652)
+texture = ExtResource("2_h2yge")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(527, 0, 85, 128)
+
+[node name="Bridge" type="Node2D" parent="." unique_id=796419341]
+position = Vector2(239, 550)
+script = ExtResource("3_h2yge")
+
+[node name="Bridge1" type="Sprite2D" parent="Bridge" unique_id=1235423058]
+visible = false
+position = Vector2(-18, -21)
+scale = Vector2(0.28089276, 0.27853534)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(488, 383.5, 278, 372)
+
+[node name="Bridge2" type="Sprite2D" parent="Bridge" unique_id=329075793]
+visible = false
+position = Vector2(38.91797, -64.66699)
+scale = Vector2(0.27663916, 0.27663916)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(767, 383, 128, 61)
+
+[node name="Bridge3" type="Sprite2D" parent="Bridge" unique_id=1711972647]
+visible = false
+position = Vector2(93, -40)
+scale = Vector2(0.2713943, 0.27139446)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(880.68665, 383.22012, 271.52576, 239.23312)
+
+[node name="Bridge4" type="Sprite2D" parent="Bridge" unique_id=1496034333]
+visible = false
+position = Vector2(169, -21)
+scale = Vector2(0.28411365, 0.27936473)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(488, 383.5, 278, 372)
+
+[node name="Bridge5" type="Sprite2D" parent="Bridge" unique_id=1747254723]
+visible = false
+position = Vector2(245.10675, -64.66699)
+scale = Vector2(0.57645696, 0.2717731)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(767, 383, 128, 61)
+
+[node name="Bridge6" type="Sprite2D" parent="Bridge" unique_id=833452162]
+visible = false
+position = Vector2(318, -64.66699)
+scale = Vector2(0.5728242, 0.28627354)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(767, 383, 128, 61)
+
+[node name="Bridge7" type="Sprite2D" parent="Bridge" unique_id=599090822]
+visible = false
+position = Vector2(391, -64.66699)
+scale = Vector2(0.5703131, 0.2855129)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(767, 383, 128, 61)
+
+[node name="Bridge8" type="Sprite2D" parent="Bridge" unique_id=99058355]
+visible = false
+position = Vector2(464, -64.66699)
+scale = Vector2(0.5768438, 0.27868858)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(767, 383, 128, 61)
+
+[node name="Bridge9" type="Sprite2D" parent="Bridge" unique_id=1033257653]
+visible = false
+position = Vector2(578.777, -64.66699)
+scale = Vector2(1.2198862, 0.28473523)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(767, 383, 128, 61)
+
+[node name="Bridge10" type="Sprite2D" parent="Bridge" unique_id=2067300514]
+visible = false
+position = Vector2(694.99994, -22)
+scale = Vector2(0.28453463, 0.27510226)
+texture = ExtResource("5_lquwl")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(488, 383.5, 278, 372)
+
+[node name="Bridge11" type="Sprite2D" parent="Bridge" unique_id=658226059]
+visible = false
+position = Vector2(752, -65)
+scale = Vector2(0.27323082, 0.27323082)
+texture = ExtResource("5_lquwl")
+region_enabled = true
+region_rect = Rect2(767, 383, 128, 61)
+
+[node name="Bridge12" type="Sprite2D" parent="Bridge" unique_id=447768371]
+visible = false
+position = Vector2(808, -22)
+scale = Vector2(0.28203216, 0.27731812)
+texture = ExtResource("5_lquwl")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(488, 383.5, 278, 372)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=268775130]
+
+[node name="QuestionPanel" type="Panel" parent="UI" unique_id=31099793]
+anchors_preset = -1
+anchor_left = -0.042000003
+anchor_top = 0.022000002
+anchor_right = -0.042000003
+anchor_bottom = 0.022000002
+offset_left = 369.76
+offset_top = -3.840001
+offset_right = 1022.26
+offset_bottom = 251.16
+
+[node name="Answer2" type="Button" parent="UI/QuestionPanel" unique_id=232604330]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 86.0
+offset_right = 589.0
+offset_bottom = 117.0
+text = "Arany János"
+autowrap_mode = 2
+
+[node name="Answer3" type="Button" parent="UI/QuestionPanel" unique_id=1297182275]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 180.0
+offset_right = 589.0
+offset_bottom = 211.0
+text = "Petőfi Sándor"
+autowrap_mode = 2
+
+[node name="Answer1" type="Button" parent="UI/QuestionPanel" unique_id=1198743795]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 86.0
+offset_right = 258.0
+offset_bottom = 117.0
+text = "Gárdonyi Géza"
+autowrap_mode = 2
+
+[node name="Answer4" type="Button" parent="UI/QuestionPanel" unique_id=1393841549]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 180.0
+offset_right = 258.0
+offset_bottom = 211.0
+text = " Jókai Mór"
+autowrap_mode = 2
+
+[node name="QuestionLabel" type="Label" parent="UI/QuestionPanel" unique_id=122712257]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 12.0
+offset_right = 471.0
+offset_bottom = 35.0
+text = "Ki írta az Egri csillagokat? "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HeartLabel" type="Label" parent="UI" unique_id=888179461]
+visible = false
+offset_left = 1068.0
+offset_top = 239.0
+offset_right = 1181.0
+offset_bottom = 352.0
+theme_override_font_sizes/font_size = 82
+text = "❤️"
+
+[node name="WinLabel" type="Label" parent="UI" unique_id=977358270]
+visible = false
+offset_left = 259.0
+offset_top = 11.0
+offset_right = 1081.0
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(0.60038817, 1, 0, 1)
+theme_override_constants/paragraph_spacing = 7
+theme_override_constants/shadow_offset_x = 39
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = SubResource("FontVariation_7mycd")
+theme_override_font_sizes/font_size = 200
+text = "Nyertél! "
+
+[node name="LoseLabel" type="Label" parent="UI" unique_id=1927499268]
+visible = false
+offset_left = 180.0
+offset_top = -13.0
+offset_right = 1192.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(0.9676589, 0, 0, 1)
+theme_override_constants/paragraph_spacing = 7
+theme_override_constants/shadow_offset_x = 39
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = SubResource("FontVariation_7mycd")
+theme_override_font_sizes/font_size = 200
+text = "Vesztettél!"
+
+[connection signal="pressed" from="UI/QuestionPanel/Answer2" to="." method="_on_answer_2_pressed"]
+[connection signal="pressed" from="UI/QuestionPanel/Answer3" to="." method="_on_answer_3_pressed"]
+[connection signal="pressed" from="UI/QuestionPanel/Answer1" to="." method="_on_answer_1_pressed"]
+[connection signal="pressed" from="UI/QuestionPanel/Answer4" to="." method="_on_answer_4_pressed"]

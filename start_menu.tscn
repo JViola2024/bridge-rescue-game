@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://nko67wqijc3o"]
+
+[ext_resource type="Script" uid="uid://djvs1a7uo5jnt" path="res://start_menu.gd" id="1_jwbto"]
+[ext_resource type="Texture2D" uid="uid://diuj6hp1sydpd" path="res://assets/backgrounds/ChatGPT Image 2026. márc. 26. 18_58_08.png" id="2_ia0g5"]
+
+[node name="Control" type="Control" unique_id=507101945]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jwbto")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1843335997]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -5.0
+offset_right = 1277.0
+offset_bottom = 716.0
+texture = ExtResource("2_ia0g5")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect" unique_id=201043898]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 1.0
+offset_right = 1276.0
+offset_bottom = 723.0
+color = Color(0, 0, 0, 0.45000002)
+
+[node name="Informatika" type="Button" parent="TextureRect" unique_id=1521298403]
+layout_mode = 0
+offset_left = 851.0
+offset_top = 322.0
+offset_right = 1236.0
+offset_bottom = 421.0
+theme_override_colors/font_color = Color(0.59000057, 0.8750814, 0.7313913, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/h_separation = 100
+theme_override_constants/icon_max_width = 100
+theme_override_constants/line_spacing = 100
+theme_override_font_sizes/font_size = 56
+text = "Informatika"
+
+[node name="Történelem" type="Button" parent="TextureRect" unique_id=1349189034]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 322.0
+offset_right = 787.0
+offset_bottom = 421.0
+theme_override_colors/font_color = Color(0.67263305, 0.6155507, 0.80946815, 1)
+theme_override_constants/outline_size = 9
+theme_override_constants/h_separation = 99
+theme_override_constants/icon_max_width = 100
+theme_override_constants/align_to_largest_stylebox = 100
+theme_override_constants/line_spacing = 100
+theme_override_font_sizes/font_size = 56
+text = "Történelem"
+
+[node name="Irodalom" type="Button" parent="TextureRect" unique_id=1359014851]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 322.0
+offset_right = 329.0
+offset_bottom = 421.0
+theme_override_colors/font_color = Color(0.8643148, 0.8981476, 0.7153805, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/h_separation = 100
+theme_override_constants/icon_max_width = 100
+theme_override_constants/align_to_largest_stylebox = 100
+theme_override_constants/line_spacing = 100
+theme_override_font_sizes/font_size = 56
+text = "Irodalom"
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=1777107555]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 15.0
+offset_right = 1004.0
+offset_bottom = 166.0
+theme_override_constants/line_spacing = 14
+theme_override_constants/paragraph_spacing = 500
+theme_override_constants/shadow_offset_x = 100
+theme_override_constants/shadow_offset_y = 100
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 200
+theme_override_font_sizes/font_size = 110
+text = "Válassz témát"
+
+[connection signal="pressed" from="TextureRect/Informatika" to="." method="_on_informatika_pressed"]
+[connection signal="pressed" from="TextureRect/Történelem" to="." method="_on_történelem_pressed"]
+[connection signal="pressed" from="TextureRect/Irodalom" to="." method="_on_irodalom_pressed"]
